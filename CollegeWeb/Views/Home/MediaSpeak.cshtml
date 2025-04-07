@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Speaks</title>
+    <style>
+        /* Media Speaks Section */
+        .media-speaks {
+            text-align: center;
+            padding: 40px;
+            background: #f9f9f9;
+            margin-top:20px;
+        }
+
+            .media-speaks h2 {
+                font-size: 24px;
+                color: #333;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+        /* Media Grid */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Media Items */
+        .media-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            padding: 20px;
+            margin-top: 20px;
+           
+        }
+
+            .media-item img:hover {
+                transform: scale(1.05);
+                margin-top: 20px;
+                padding:20px;
+            }
+
+        /* Lightbox Styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .lightbox-content {
+            max-width: 80%;
+            max-height: 80vh;
+            margin-top: 50px;
+          
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="media-speaks">
+        <h2>Media Speaks</h2>
+        <div class="media-grid">
+            <div class="media-item">
+                <img src="~/Images/news/news1.png" alt="Media Coverage 1" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news2.png" alt="Media Coverage 2" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news3.png" alt="Media Coverage 3" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news4.png" alt="Media Coverage 4" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news5.png" alt="Media Coverage 5" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news6.png" alt="Media Coverage 5" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news7.png" alt="Media Coverage 5" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news8.png" alt="Media Coverage 5" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news9.png" alt="Media Coverage 5" onclick="openLightbox(this)">
+            </div>
+            <div class="media-item">
+                <img src="~/Images/news/news10.png" alt="Media Coverage 5" onclick="openLightbox(this)">
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" class="lightbox-content">
+        </div>
+    </section>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById("lightbox").style.display = "block";
+            document.getElementById("lightbox-img").src = img.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

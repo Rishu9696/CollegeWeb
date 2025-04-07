@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Message";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Prevents horizontal scroll */
+        }
+
+     
+        /* ✅ Top Image & Middle Image - Full Width */
+        .top-image img,
+        .middle-image img {
+            width: 100vw; /* Full viewport width */
+            height: 450px; /* Adjust height as needed */
+            object-fit: cover; /* Ensures full coverage */
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ✅ Removes space between navbar and top image */
+        .top-image {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ✅ Message Sections */
+        .message-section {
+            margin:30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .message-text {
+            width: 50%;
+        }
+
+        .message-image {
+            width: 45%;
+            height:80%
+        }
+
+            .message-image img {
+                width: 100%;
+                height:70%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+            }
+
+        /* ✅ Titles & Text Styling */
+        .message-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #033F65;
+            margin-bottom: 10px;
+        }
+
+        .message-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+
+        }
+
+    </style>
+</head>
+<body>
+
+   
+
+        <!-- Top Image -->
+        <div class="top-image">
+            <img src="~/images/ChairMan’s Desk.jpg" alt="Top Image">
+        </div>
+
+        <!-- Chairman's Message -->
+        <div class="message-section">
+            <div class="message-text">
+                <div class="message-title">Chairman's Desk</div>
+                <div class="message-content">
+                    <p><strong>“Hope is the pillar that holds the world”.</strong></p>
+                    <p>Shree Ameya Public Charitable Trust has been formed
+                        with a mission of providing services for nation building.
+                        What better source could there be for achievement of this 
+                        vision than thinking about and investing in education.</p>
+                    <p>Archimedes said, “Give me a place to stand and I will move the 
+                        earth.”</p>
+                    <p>Aditya Institute of Management Studies and Research 
+                        believes in growth of individuals and community, 
+                        with Reason and Passion. We believe in imparting 
+                        management education not for years but for life. 
+                        There are only two ways to live. One is as though 
+                        nothing is a miracle. The other is as if everything is. 
+                        AIMSR stands as a pillar of quality education and research 
+                        for Mumbai Suburbia. The incredible infrastructure, a focused 
+                        faculty group with curious student fraternity make AIMSR a force 
+                        to reckon with. Explore this new and upcoming hub of holistic 
+                        learning…</p>
+                    <p><strong>Dr. Harishchandra S. Mishra</strong><br>Chairman & Founder Trustee – AIMSR</p>
+                </div>
+            </div>
+            <div class="message-image">
+                <img src="~/images/faculty/chairman_sir.jpg" alt="Chairman">
+            </div>
+        </div>
+
+        <!-- Middle Image -->
+        <div class="middle-image">
+            <img src="~/images/Director.png" alt="Middle Image">
+        </div>
+
+        <!-- Director's Message -->
+        <div class="message-section">
+            <div class="message-text">
+                <div class="message-title">Director's Desk</div>
+                <div class="message-content">
+                    <p>
+                        Welcome to Aditya Institute of Management 
+                        Studies and Research. Our Institute is amongst the 
+                        leading B-schools in India and ranked amongst the top 10 
+                        B-schools in Mumbai which has created a unique identity 
+                        for itself by challenging conventional thinking and 
+                        learning in the global market. The AICTE approved PGDM
+                        program and the Mumbai University affiliated MMS program 
+                        are both known for their excellence in building leadership 
+                        skills in more than 400 students each year. A rich co-curricular 
+                        experience complements a strong conceptual foundation through 
+                        100+ experiential learning opportunities spread across the 
+                        duration of all programs. Whether it is through creative problem 
+                        solving workshops, case studies, live projects or out bound 
+                        training programs, our Faculty selects the pedagogy that’s 
+                        best for each course. Our Faculty have been recipients of 
+                        many distinguished awards and honors both nationally and 
+                        internationally. We also have an impressive roster of innovative 
+                        industry speakers who share their experiences in events, seminars 
+                        and workshops. Our students are preferred by 500+ recruiters who 
+                        seek to select professional managers who are ready for corporate 
+                        life with technical knowledge and professionalism. The industry 
+                        orientation is strongly developed by weekly Coffee Meets with the 
+                        1000+ responsive and engaged alumni who inspire and encourage 
+                        students. These Alumni of the Institute are making a measurable 
+                        difference in the industry. Global perspective is encouraged 
+                        through an international study tour which includes visits to 
+                        local companies, business schools and some places of interest.
+                        Last year the tour to Singapore enabled students to immerse
+                        themselves in another culture and experience the challenges 
+                        and opportunities facing organisations outside India. Our 
+                        focus is to develop our students as global citizens, with 
+                        respect and appreciation for diverse cultures. They should 
+                        become confident decision makers to take up leadership roles 
+                        in future. Wishing you luck to create meaning in every decision
+                        that you take!
+                    </p>
+                    <p><strong>Dr. Balkrishna Parab</strong><br>Director</p>
+                </div>
+            </div>
+            <div class="message-image">
+                <img src="~/images/faculty/director_sir.png" alt="Director">
+            </div>
+        </div>
+
+
+</body>
+</html>

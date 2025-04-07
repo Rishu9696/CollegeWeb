@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="~\lib\bootstrap\dist\css\bootstrap.min.css" />
+
+    <meta charset="UTF-8">
+    <script src="~/js/site.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="~/Images/Logo3.png" alt="College Logo">
+        </div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#news-events">News </a></li>
+            <li><a href="#event2">Events </a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="home"class="section">
+            <div class="home-content">
+                <h1> WELCOME   TO   AIMSR !</h1>
+                <p>
+                    <em>
+                        Shaping future leaders with MMS, MCA, and BMS 
+                        —where management excellence meets technological
+                        innovation and business acumen!
+                    </em>
+                </p>
+                <div class="button-container2">
+                    <button type="button" onclick="location.href='@Url.Action("Admission", "Home")'">Admission</button>
+                    <button type="button" onclick="location.href='#about'">Learn More</button>
+                </div>"
+               
+            </div>
+ 
+            <!-- Section for Big Button Boxes -->
+        </section>
+        <section id="about" class="about-section">
+            <h1 class="section-title"><br />About Us</h1> <!-- Heading at the top center -->
+            <div class="about-container">
+                <div class="about-content">
+                    <p>
+                        <strong>
+                            Aditya Institute of Management Studies and Research (AIMSR)
+                            – A Premier B-School in Mumbai:
+                        </strong><br /><br />
+                        In today's dynamic and ever-evolving VUCA (Volatile,
+                        Uncertain, Complex, and Ambiguous) world, the demand
+                        for visionary leaders with resilience and purpose is
+                        greater than ever. Aditya Institute of Management
+                        Studies and Research (AIMSR) stands at the forefront
+                        of this transformation, equipping students with innovative
+                        leadership skills to navigate modern business challenges
+                        successfully.
+
+                        Recognized as one of India’s leading B-Schools,
+                        AIMSR has earned its place among the top private B-Schools
+                        in Mumbai, securing the 4th rank in the Times B-School Survey
+                        2024. The institute’s unwavering commitment to academic excellence,
+                        research, and student development has been further validated by
+                        the prestigious NAAC Accreditation, reinforcing its dedication to
+                        delivering quality education, industry-driven learning, and holistic
+                        development.<br /><br />
+
+                        AIMSR continues to set benchmarks in management education, preparing
+                        future leaders to excel in the corporate world with innovation, integrity,
+                        and global perspective.
+                    </p>
+                </div>
+                <div class="about-table">
+                    <table>
+                        <tr><td><a href="@Url.Action("Differentator", "Home")">Differentiators AIMSR</a></td></tr>
+                        <tr><td><a href="@Url.Action("CoreFaculty", "Home")" )">Faculty</a></td></tr>
+                        <tr><td><a href="@Url.Action("Message", "Home")">Message</a></td></tr>
+                        <tr><td><a href="@Url.Action("MediaSpeak", "Home")">Media Speaks</a></td></tr>
+                    </table>
+                    <!-- Image Below Table (Wrapped in a div with a link) -->
+                    <div class="about-image-container">
+                        <a href="@Url.Action("MissionVision", "Home")" class="image-link">
+                            <div class="image-overlay">
+                                <img src="~/images/Vision & Mission.png" alt="College Events" class="about-image" />
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="courses" class="section2">
+            <h3 class="featured-title">Featured Courses</h3>
+            <div class="course-container">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <img src="images/MCA.png" alt="MCA">
+                    <h4>Master of Computer Application</h4>
+                    <p>A program focused on advanced computing, software development, and IT applications.</p>
+                    <a href="@Url.Action("MCA", "Home")" class="btn">More</a>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <img src="images/MMS.png" alt="MMS">
+                    <h4>Master of Management Studies</h4>
+                    <p>A management degree covering business strategy, finance, marketing, and leadership skills.</p>
+                    <a href="@Url.Action("MMS", "Home")" class="btn">More</a>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <img src="images/BMS.png" alt="BMS">
+                    <h4>Bachelor of Management Studies</h4>
+                    <p>An undergraduate course in business management, covering finance, marketing, and organizational behavior..</p>
+                    <a href="@Url.Action("BMS", "Home")" class="btn">More</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="news-events"class="news-events">
+            <!-- News Section -->
+            <div class="news-section">
+                <h2 class="section-title1">Notice</h2>
+                <div class="news-container">
+                    <div class="news-list">
+                        <a href="~/Images/pdf/pdf1.pdf">* Institute level Merit List for BMS 2024-25</a>
+                        <a href="~/Images/pdf/pdf2.pdf">* General Merit list of 1st year BMS 2024-25</a>
+                        <a href="~/Images/pdf/pdf3.pdf">* Admission Notice - 2024-25 from ARA</a>
+                        <a href="~/Images/pdf/pdf4.pdf">* MCA Admission Notification-2 A.Y. 2024-25</a>
+                        <a href="~/Images/padf/pdf5.pdf">* MMS Admission Notification-2 A.Y. 2024-25</a>
+                        <a href="~/Images/pdf/pdf6.pdf">* ACAP MMS enquiry details 2024-26</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Section -->
+            <div class="events-section">
+                <h2 class="section-title2">Featrued Articles</h2>
+                <div class="events-container">
+                    <button class="prev-btn">&#10094;</button>
+                    <div class="events-slider">
+                        <div class="event-slide active">
+                            <a href="https://timesglobalnews.com/2025/01/10/borivali-design-fair-2025-a-grand-opening-highlighting-innovation-and-community-impact/" target="_blank" rel="noopener noreferrer">
+                                <img src="~/Images/news/vid1.png" alt="Event 1">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://www.youtube.com/watch?v=nKFKZMm3gzQ" target="_blank" rel="noopener noreferrer">
+                                <img src="~/Images/news/vid2.png" alt="Event 2">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://mtinews.in/borivali-design-fair-2025-a-grand-opening-highlighting-innovation-and-community-impact/" target="_blank" rel="noopener noreferrer">
+                                <img src="~/Images/news/vid3.png" alt="Event 3">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://www.youtube.com/watch?v=dTG5NdzbTiE" target="_blank" rel="noopener noreferrer">
+                               <img src="~/Images/news/vid4.png" alt="Event 4">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://www.instagram.com/reel/DEnWdcczQk2/?igsh=Y29kbDk0eHFqdHY5" target="_blank" rel="noopener noreferrer">
+                               <img src="~/Images/news/vid5.png" alt="Event 5">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://www.youtube.com/watch?v=Oml9W7PAP8s" target="_blank" rel="noopener noreferrer">
+                                <img src="~/Images/news/vid6.png" alt="Event 6">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://www.orientpublication.com/2025/01/borivali-design-fair-2025-grand-opening.html" target="_blank" rel="noopener noreferrer">
+                               <img src="~/Images/news/vid7.png" alt="Event 7">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://www.youtube.com/watch?v=Oml9W7PAP8s" target="_blank" rel="noopener noreferrer">
+                               <img src="~/Images/news/vid8.png" alt="Event 8">
+                            </a>
+                        </div>
+                        <div class="event-slide">
+                            <a href="https://mtinews.in/borivali-design-fair-2025-a-grand-opening-highlighting-innovation-and-community-impact/" target="_blank" rel="noopener noreferrer">
+                               <img src="~/Images/news/vid3.png" alt="Event 9">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="next-btn">&#10095;</button>
+                </div>
+            </div>
+         
+        </section>
+
+
+        <section id="event2" class="event2-section">
+            <h1 class="section-title">Events</h1>
+            <div class="event2-container">
+                <button class="event2-prev">&#10094;</button>
+             
+                <div class="event2-slider-wrapper">
+                    <div class="event2-slider">
+                        <!-- === Event 1 === -->
+                        <div class="event2-slide">
+                            <div class="event2-image-slider">
+                                <img src="~/Images/event/shiv.png" class="event-photo active" alt="Event 1 Photo 1">
+                                <img src="~/Images/event/shiv-1.png" class="event-photo" alt="Event 1 Photo 2">
+                                <img src="~/Images/event/shiv-2.png" class="event-photo" alt="Event 1 Photo 3">
+                                <img src="~/Images/event/shiv-3.png" class="event-photo" alt="Event 1 Photo 3">
+                                <img src="~/Images/event/shiv-4.png" class="event-photo" alt="Event 1 Photo 3">
+                                <img src="~/Images/event/shiv-5.png" class="event-photo" alt="Event 1 Photo 3">
+
+                            </div>
+                            <div class="event2-content">
+                                <h3>Chhatrapati Shivaji Maharaj Jayanti</h3>
+                                <h4>Date:February 19, 2025</h4>
+                                <p>
+                                    On this Chhatrapati Shivaji Maharaj Jayanti, we honor the visionary leader, fearless warrior, 
+                                    and founder of the Maratha Empire—Shivaji Maharaj!
+                                    His courage, wisdom, and unwavering commitment to Swarajya (self-rule) 
+                                    continue to inspire generations.
+                                    Let’s remember his leadership, and dedication towards justice and equality.
+                                    May we all walk the path of bravery, integrity, and patriotism shown by the 
+                                    great Chhatrapati!
+                                </p>
+                                <p>
+                                    🚩 शिवाजी महाराज की जय! 🚩
+                                </p>
+                                    <p>
+                                    #ShivajiMaharajJayanti #JaiBhavaniJaiShivaji #MarathaPride #Swarajya #ShivajiMaharaj #LegendLivesOn
+                                </p>
+                                
+                            </div>
+                        </div>
+
+                        <!-- === Event 2 === -->
+                        <div class="event2-slide">
+                            <div class="event2-image-slider">
+                                <img src="~/Images/event/makar1.png" class="event-photo active" alt="Event 2 Photo 1">
+                                <img src="~/Images/event/makar2.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/makar3.png" class="event-photo" alt="Event 2 Photo 2">
+
+                            </div>
+                            <div class="event2-content">
+                                <h3>Makar Sakranti!!</h3>
+                                <h4>Date:January 14, 2025</h4>
+                                <p>
+                                    A Joyous Makar Sankranti!
+                                    As the sun embarks on its northward journey (Uttarayan), may this festival bring abundance, happiness, and prosperity into your life!
+                                    Let’s celebrate with colorful kites, sesame sweets, and heartfelt joy while embracing the spirit of new beginnings and gratitude!
+                                    </p>
+                                    <p>
+                                    Fly high, shine bright, and spread happiness!
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- === Event 3 === -->
+                        <div class="event2-slide">
+                            <div class="event2-image-slider">
+                                <img src="~/Images/event/rep.png" class="event-photo active" alt="Event 2 Photo 1">
+                                <img src="~/Images/event/rep1.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/rep2.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/rep3.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/rep4.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/rep5.png" class="event-photo" alt="Event 2 Photo 2">
+
+                            </div>
+                            <div class="event2-content">
+                                <h3>Republic Day 2025</h3>
+                                <h4>Date:January 26, 2025</h4>
+                                <p>
+                                    Let’s take pride in our nation’s rich heritage, diverse culture, 
+                                    and unwavering strength. May we continue to uphold the values of justice, 
+                                    liberty, equality, and fraternity as responsible citizens.
+                                    </p>
+                                    <p>
+                                    Jai Hind! #RepublicDay 🇮🇳 #IndiaAtItsBest #ProudIndian #UnityInDiversity #JaiHind
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- === Event 4 === -->
+                        <div class="event2-slide">
+                            <div class="event2-image-slider">
+                                <img src="~/Images/event/matru.png" class="event-photo active" alt="Event 2 Photo 1">
+                                <img src="~/Images/event/matru1.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/matru2.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/matru3.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/matru4.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/matru5.png" class="event-photo" alt="Event 2 Photo 2">
+
+                            </div>
+                            <div class="event2-content">
+                                <h3>Matru Bhasha Diwas</h3>
+                                <h4>Date:February 21, 20255</h4>
+                                <p>
+                                    International Mother Language Day
+
+                                    Languages are more than just words—they are the heart of our identity, culture, and heritage!
+
+                                    On this International Mother Language Day (February 21), let’s honor the beauty of linguistic diversity and promote the importance of preserving every mother tongue
+                                    </p><p>
+                                    Every language tells a story. Every dialect carries a legacy. Let’s cherish and protect them for future generations!
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="event2-slide">
+                            <div class="event2-image-slider">
+                                <img src="~/Images/event/women.png" class="event-photo active" alt="Event 2 Photo 1">
+                                <img src="~/Images/event/women1.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/women2.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/women3.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/women4.png" class="event-photo" alt="Event 2 Photo 2">
+                                <img src="~/Images/event/women5.png" class="event-photo" alt="Event 2 Photo 2">
+
+                            </div>
+                            <div class="event2-content">
+                                <h3>
+                                    International Women’s Day
+                                </h3>
+                                <h4>Date:March 08, 2025</h4>
+                                <p>
+                                    Aditya Group of Institution (AGI) celebrated International Women's Day on 8th March 2025 with great enthusiasm, honoring the spirit of womanhood through a vibrant and heartfelt tribute.
+                                    The theme for this year’s campaign, ‘Accelerate Action,’ underscored the importance of swift and decisive steps toward achieving gender equality. The event was graced by the presence of esteemed professionals, including Dr. Sonal Lakdawala Jadhav, a highly experienced Ophthalmologist with 28 years of expertise in the field, and Dr. Avanti Trivedi, a consultant dermatologist from Clara, graced the occasion with their inspiring words.
+                                    Students paid tribute to the occasion through their scintillating performances, which included poetry recitations, thought-provoking skits, and mesmerizing dance acts, reflecting the resilience and achievements of women across various fields.
+                                    </p><p>
+                                    Happy Women's Day!!!
+
+                                  
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- === Add more events below === -->
+                    </div>
+                </div>
+
+                <button class="event2-next">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contact" class="max-w-lg mx-auto mt-10 p-6 bg-white rounded-2xl shadow-lg">
+            <h2 class="text-2xl font-bold text-center mb-4">Enquire Now</h2>
+            <p id="statusMessage" class="text-center p-2 rounded hidden"></p>
+            <form id="contactForm" class="space-y-4">
+                <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-2 border rounded" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+                <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full p-2 border rounded" required />
+                <textarea id="message" name="message" placeholder="Enquire" class="w-full p-2 border rounded h-24" required></textarea>
+                <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Send Message</button>
+            </form>
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-success">@ViewBag.Message</div>
+            }
+        </section>
+       
+
+        
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

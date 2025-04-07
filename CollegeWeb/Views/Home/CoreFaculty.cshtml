@@ -1,0 +1,86 @@
+﻿@model List<Faculty>
+
+@{
+    ViewData["Title"] = "Core Faculty";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Faculty</title>
+    <link rel="stylesheet" href="~/css/faculty.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-top:20px;
+        }
+
+        .faculty-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .faculty-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .faculty-card img {
+                width: 230px;
+                height: 260px;
+                border-radius: 0px;
+                object-fit: cover;
+            }
+
+        .faculty-info {
+            width: 65%;
+        }
+
+        .faculty-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #033F65;
+        }
+
+        .faculty-designation {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Alternating image positions */
+        .faculty-card:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faculty-container">
+        <h2>Our Core Faculty</h2>
+
+        @foreach (var faculty in Model)
+        {
+            <div class="faculty-card">
+                <img src="@faculty.ImageUrl" alt="@faculty.Name">
+                <div class="faculty-info">
+                    <div class="faculty-name">@faculty.Name</div>
+                    <div class="faculty-designation">@faculty.Designation</div>
+                    <p>@faculty.Description</p>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</body>
+</html>

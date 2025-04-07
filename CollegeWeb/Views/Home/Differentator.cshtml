@@ -1,0 +1,96 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differentiators AIMSR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0; /* Remove any default margin */
+            padding:0; /* Remove any default padding */
+        }
+
+       
+
+        /* Header Image - Full Width */
+        .header-image {
+            width: 100%; /* Adjust height-wise small image */
+            height: 300px;
+            display: block;
+            margin: 0;
+
+        /* Footer Image - Centered */
+        .footer-image{
+            width: 60%;
+            height: auto; /* Adjust height automatically */
+            display: block;
+            margin: 0 auto; /* Centers image */
+            object-fit: cover;
+            
+        }
+
+    </style>
+</head>
+<body>
+   
+        <!-- Top Image -->
+        <img src="@Url.Content("~/Images/different.jpg")" alt="Top Image" class="header-image">
+
+    <h1 class="text-center mt-3" style="color:#033F65">Differentiators  AIMSR</h1>
+
+        <div class="content-section">
+        <h2 style="color:#033F65">Overview</h2>
+            <p>Year of establishment: 2011, Approved by AICTE, DTE & Affiliated to Mumbai University.</p>
+            <p>Course: MMS – Specialization: Finance / Marketing / Human Resources / IT / Operations.</p>
+        </div>
+
+        <div class="content-section">
+        <h2 style="color:#033F65">AIMSR Awards & Ranking</h2>
+            <ul>
+                <li>Ranked 37th among the top Private B-School in India by Times B-School Survey 2023.</li>
+                <li>Ranked 4th among the top Private B-Schools in Mumbai, Times Top B-Schools Survey, 2023.</li>
+                <li>Ranked 40th among the top Private B-School in India by Times B-School Survey 2022.</li>
+                <li>Ranked 6th among the top Private B-Schools in Mumbai, Times Top B-Schools Survey, 2022.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+        <h2 style="color:#033F65">What Makes Us Special</h2>
+            <ul>
+                <li>Consistent focus on achieving academic excellence.</li>
+                <li>Constantly striving to bridge the academia – industry gap.</li>
+                <li>High-caliber faculty with rich research, industry, consulting, and academic experience.</li>
+                <li>Training for employability by multi-stream workshops.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+        <h2 style="color:#033F65">Infrastructure</h2>
+            <ul>
+                <li>9-storied Wi-Fi campus.</li>
+                <li>1,20,000 sq. ft. area.</li>
+                <li>12,000 sq.ft convention centre.</li>
+                <li>2,000 sq.ft seminar hall.</li>
+                <li>Auditorium with 500+ capacity.</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+        <h2 style="color:#033F65">Innovative Teaching Techniques</h2>
+            <ul>
+                <li>100+ Guest speakers from industry every year.</li>
+                <li>Ideation & execution through E-Cell.</li>
+                <li>Emphasis on Big Data & Research.</li>
+                <li>Outbound training to develop team-building & leadership skills.</li>
+            </ul>
+        </div>
+
+        <!-- Bottom Image -->
+        <img src="@Url.Content("~/Images/bottom.png")" alt="Bottom Image" class="footer-image mt-3">
+
+</body>
+</html>
