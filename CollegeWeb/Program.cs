@@ -14,7 +14,7 @@ namespace CollegeWeb
 
             // Add DbContext service registration
             builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("ContactDetailDb")));
 
             var app = builder.Build();
 

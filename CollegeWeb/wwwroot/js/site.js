@@ -140,11 +140,11 @@
 
 
 
-    /*-------------------Contact US------------------------*/
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contactForm");
-        const statusMessage = document.getElementById("statusMessage");
+   // ------------------- Contact Us -------------------
+    const form = document.getElementById("contactForm");
+    const statusMessage = document.getElementById("statusMessage");
 
+    if (form) {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
@@ -153,6 +153,7 @@
             const subject = document.getElementById("subject").value.trim();
             const message = document.getElementById("message").value.trim();
 
+            // Basic validation
             if (!name || !email || !subject || !message) {
                 statusMessage.textContent = "Please fill out all fields.";
                 statusMessage.classList.remove("hidden");
@@ -180,12 +181,13 @@
                     setTimeout(() => statusMessage.classList.add("hidden"), 3000);
                 })
                 .catch(error => {
+                    console.error(error);
                     statusMessage.textContent = "Something went wrong.";
                     statusMessage.classList.remove("hidden", "bg-green-100", "text-green-700");
                     statusMessage.classList.add("bg-red-100", "text-red-700");
                 });
         });
-    });
+    }
 
 
    

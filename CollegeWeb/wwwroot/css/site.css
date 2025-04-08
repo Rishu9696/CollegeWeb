@@ -96,7 +96,7 @@
 
 /* Home Section */
 #home {
-    height: 80vh;
+    height: 120vh;
     display: flex;
     background-image: url("../Images/bg2.png"); /* Ensure the path is correct */
     background-repeat: no-repeat;

@@ -50,10 +50,15 @@ namespace CollegeWeb.Controllers
         [IgnoreAntiforgeryToken]
         public async Task<IActionResult> SubmitContact([FromBody] ContactViewModel model)
         {
+            Console.WriteLine("✅ [SubmitContact] Hit");
+
             if (!ModelState.IsValid)
             {
+                Console.WriteLine("❌ Invalid model state");
                 return BadRequest("Invalid form data.");
             }
+
+            Console.WriteLine($"Name: {model.Name}, Email: {model.Email}");
 
             var contactMessage = new ContactMessage
             {
@@ -66,8 +71,11 @@ namespace CollegeWeb.Controllers
             _context.ContactMessages.Add(contactMessage);
             await _context.SaveChangesAsync();
 
+            Console.WriteLine("✅ Saved to DB");
+
             return Ok("Thank you for contacting us!");
         }
+
 
 
         public IActionResult CoreFaculty()
